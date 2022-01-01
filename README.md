@@ -8,5 +8,5 @@ O controle das tarefas será feito pelo GitHub
 
 :sparkles: Nova Funcionalidade
 :up: Atualização
-:beetle: Correção de Bug
+:frog: Correção de Bug
 :Chechred_flag: Release
