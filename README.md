@@ -1,5 +1,5 @@
-# portifolio
-Portifólio https://wanessasantos360.github.io/Portfolio/
+# Portfolio
+Para visualizar na web: https://wanessasantos360.github.io/Portfolio/
 
 ## Tarefas 
 O controle das tarefas será feito pelo GitHub
