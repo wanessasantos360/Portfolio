@@ -86,10 +86,9 @@ hearder {
     animation: moveBanner 1s 0.9s forwards;
 }
 
-
 .banner button:hover {
     opacity: 0.8;
-}
+} 
 
 @keyframes moveBanner {
     0%{
@@ -99,5 +98,4 @@ hearder {
         transform: translateY(0);
         opacity: 1;
     }
-
 }
