@@ -380,3 +380,22 @@ hearder {
   opacity: 1;
   visibility: visible;
 }
+
+/*### Estilizando a barra de rolagem*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  background-color: #CCCCCC;
+}
+::-webkit-scrollbar-button {
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #2f6991;
+  background: -webkit-linear-gradient(to right, #63c0f1, #0082c8, #63c0f1, );  
+  background: linear-gradient(to left, #0082c8, #63c0f1);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track-piece {
+  background: #CCCCCC;
+}
