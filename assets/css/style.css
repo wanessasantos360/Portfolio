@@ -375,6 +375,10 @@ hearder {
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 
+.card-info button:hover{
+  cursor: pointer;
+}
+
 .card:hover .card-info{
   bottom: 2rem;
   opacity: 1;
