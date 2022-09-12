@@ -370,13 +370,14 @@ hearder {
   font-family: var(--font-action);
   color: #eee;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-size: .8rem;
   border: none;
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 
 .card-info button:hover{
   cursor: pointer;
+  opacity: .8;
 }
 
 .card:hover .card-info{
