@@ -245,7 +245,7 @@ hearder {
   margin-top: 1rem;
 }
 
-.secao-header h1{
+.secao-header h2{
   font-family: var(--font-primary);
   font-size: 3rem;
   color: #003755;
@@ -453,7 +453,7 @@ hearder {
   padding: 1rem 3rem 3rem 3rem;
 }
 
-.secao-contato h1{
+.secao-contato h2{
   width: 100%;
   text-align: center;
   font-family: var(--font-primary);
@@ -518,3 +518,70 @@ hearder {
   margin-top: 1rem;
 }
 
+/*############ Seção orcamento ############*/
+.secao-orcamento{
+  width: 100%;
+  height: 100vh;
+  background: url("/img/bg-orcamento.jpg");
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orcamento-wrapper{
+  width: 60%;
+  height: 80%;
+  background-color: #414141be;
+  border-radius: 10px;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5); 
+  position: relative;
+}
+
+.secao-orcamento h2{
+  position: absolute;
+  top: -2.5rem;
+  left: 2rem;
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #63c0f1, #0082c8, #63c0f1, );  
+  background: linear-gradient(to left, #0082c8, #63c0f1);
+  padding: 0 3rem;
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-weight: lighter;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.secao-orcamento form{
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.secao-orcamento label{
+  font-family: var(--font-secundary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.secao-orcamento input[type="number"]{
+  font-family: var(--font-secundary);
+  width: 4rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+.btn-orcamento {
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+  grid-column: 2;
+  max-width: 80%;
+}
