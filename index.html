@@ -27,10 +27,10 @@
         <link rel="manifest" href="/site.webmanifest" />
 
         <!-- Icons awesome -->
-        <script
-            src="https://kit.fontawesome.com/bb177644f9.js"
-            crossorigin="anonymous"
-        ></script>
+        <script 
+          src="https://kit.fontawesome.com/bb177644f9.js" 
+          crossorigin="anonymous">
+        </script>
 
         <title>Wanessa Santos</title>
     </head>
@@ -43,7 +43,7 @@
                 <div class="line" id="line3"></div>
             </div>
 
-            <header>
+            <header id="home">
                 <div class="img-wrapper">
                     <!--  img-wrapper = img embrulhada -->
                     <img
@@ -64,7 +64,7 @@
                 <!-- A <aside> deve substituir a tag <div> porque aquela é mais semântica, define algum conteúdo além do conteúdo em que é colocado, nomalmente um menu lateral.
       ver: https://www.w3schools.com/tags/tag_aside.asp
     -->
-                <nav>
+                 <nav> <!-- barra de menus lateral -->
                     <ul class="menu">
                         <li class="menu-item">
                             <a href="#" class="menu-link">Home</a>
@@ -79,7 +79,7 @@
                             <a href="#contato" class="menu-link">Contato</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">Orçamento</a>
+                            <a href="#orcamento" class="menu-link">Orçamento</a>
                         </li>
                     </ul>
                 </nav>
@@ -272,15 +272,15 @@
 
             <section class="secao-contato" id="contato">
                 <div class="contato-wrapper">
-                    <div class="contato-left"></div>
+                    <div class="contato-left">
+
+                    </div>
                     <div class="contato-right">
                         <h2>Contato</h2>
                         <form>
                             <div class="input-group">
                                 <input type="text" class="field" id="nome" />
-                                <label for="nome" class="field-label"
-                                    >Nome</label
-                                >
+                                <label for="nome" class="field-label">Nome</label>
                             </div>
                             <div class="input-group">
                                 <input type="text" class="field" id="email" />
@@ -311,8 +311,10 @@
                 <form>
                   <label for="qtde">Qtde de Páginas</label>
                   <input type="number" min="1" name="qtde" id="qtde">
+
                   <label for="js">Preciso de um script JS</label>
                   <input type="checkbox" name="js" id="js">
+
                   <label>Layout</label>
                   <div class="group-layout">
                     <div>
@@ -324,13 +326,43 @@
                       <label for="layout-nao">Já tenho um layout</label>
                     </div>
                   </div>
+
                   <label for="prazo">Prazo</label>
                   <input type="range" name="prazo" id="prazo" min="1" max="10">
                   <label id="preco">R$ 0,00</label>
+                  
                   <button class="btn btn-orcamento" type="submit">Enviar</button>
                 </form>
               </div>
             </section>
+
+            <footer>
+              <div class="footer-content">
+                <p>Copyright &copy; 2022, Santos W - Todos os diretos reservados</p>
+                <div class="social-list">
+                  <ul>
+                    <li class="li"> <a 
+                      href="https://www.linkedin.com/in/ssantoswanessa360/"
+                      target="_blank"
+                      class="fa-brands fa-linkedin"> </a></li>
+                    <li class="li"><a
+                      href="https://github.com/wanessasantos360"
+                      target="_blank"
+                      class="fa-brands fa-github"></a></li>
+                    <li class="li"><a 
+                      href="https://www.instagram.com/wanessasantos360/"
+                        target="_blank" class="fa-brands fa-square-instagram"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+            <a href="https://wa.me/5581982245613" id="link-wpp" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="#home" id="link-topo">
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
 
         </div>
     </body>

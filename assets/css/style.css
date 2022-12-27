@@ -17,6 +17,10 @@
   --font-action: "Mulish", serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .hamburguer{
     /*background-color: red;*/
     width: 2.1rem;
@@ -439,11 +443,9 @@ hearder {
 
 .contato-left {
   width: 35%;
-  background: 
-  linear-gradient(
-    rgba(15, 15, 15, 0.6), 
-    rgba(22, 22, 22, 0.9)),
-    url(/img/contato.jpg);
+
+  background-image: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(/img/contato.jpg);
+  /* background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(/img/contato.jpg); */
   background-size: cover;
 }
 
@@ -532,10 +534,13 @@ hearder {
 .orcamento-wrapper{
   width: 60%;
   height: 80%;
-  background-color: #414141be;
+  background-color: #d2d2d2a3;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5); 
   position: relative;
+  /* white-space: nowrap; */
+  
+
 }
 
 .secao-orcamento h2{
@@ -552,6 +557,9 @@ hearder {
   font-weight: lighter;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  white-space: nowrap;
+  max-width: inherit;
+  
 }
 
 .secao-orcamento form{
@@ -584,4 +592,70 @@ hearder {
   cursor: pointer;
   grid-column: 2;
   max-width: 80%;
+}
+
+/*########## Footer ############*/
+footer{
+  width: 100%;
+  height: 8rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p{
+  font-family: var(--font-secundary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a{
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 2rem;
+}
+
+.social-list ul{
+  display: flex;
+}
+
+#link-wpp{
+  position: fixed;
+  right: 3rem;
+  bottom: 7rem;
+  width: 3rem;
+  height: 3rem;
+  background: #20b038;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #20b038, #60d66a);  
+  background: linear-gradient(to right, #20b038, #60d66a); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #000;
+}
+
+#link-topo{
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #63c0f1, #0082c8, #63c0f1, );  
+  background: linear-gradient(to left, #0082c8, #63c0f1); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #000;
 }
